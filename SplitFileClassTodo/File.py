@@ -24,5 +24,5 @@ class File:
         else:
             return []
 
-    def override_file(self, other_file_name):
+    def rename(self, other_file_name):
         os.rename(self.file_name, other_file_name)
