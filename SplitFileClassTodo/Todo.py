@@ -5,13 +5,13 @@ import os
 class Todo:
 
     def __init__(self):
-        self.todo = []
+        self._todo = []
 
     def add(self, todo):
-        self.todo.append(todo)
+        self._todo.append(todo)
 
     def read(self):
-        return self.todo
+        return self._todo
 
     def remove(self, todo_index):
-        del self.todo[todo_index]
+        del self._todo[todo_index]
