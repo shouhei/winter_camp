@@ -1,2 +1,5 @@
 .vagrant
 .idea
+*.todo
+__pycache__/
+*.pyc
