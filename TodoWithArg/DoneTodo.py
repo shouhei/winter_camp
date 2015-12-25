@@ -8,8 +8,8 @@ if "__main__" == __name__:
     else:
         file_name = 'sample'
     if sys.argv[2]:
-        # 配列に対する操作なので、人間解釈的には+1必要
-        todo_number = int(sys.argv[2]) + 1
+        # 配列に対する操作なので、人間解釈的には-1必要
+        todo_number = int(sys.argv[2]) - 1
     else:
         todo_number = 0
     with open(file_name+'.todo') as file:
