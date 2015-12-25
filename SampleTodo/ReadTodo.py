@@ -3,4 +3,5 @@ if "__main__" == __name__:
         data_raw = file.read()
         data_list = data_raw.split("\n")
         for data in data_list:
-            print(data)
+            if data != "":
+                print(data)
