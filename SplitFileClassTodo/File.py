@@ -17,9 +17,10 @@ class File:
         with open(self.file_name, "r") as file:
             data_raw = file.read()
         if data_raw:
-            if data_raw[-1] == "":
-                del data_raw[-1]
-            return data_raw.split("\n")
+            data_list = data_raw.split("\n")
+            if data_list[-1] == "":
+                del data_list[-1]
+            return data_list
         else:
             return []
 

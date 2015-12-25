@@ -12,12 +12,12 @@ class FileTestCase(TestCase):
     def test_read(self):
         file = File("test.txt")
         data = file.read()
-        self.assertListEqual(data, ["hoge","huga", "piyo",""])
+        self.assertListEqual(data, ["hoge","huga", "piyo"])
 
     def test_write(self):
         file = File("test.txt")
         file.write_line("puyo")
-        self.assertListEqual(file.read(), ["hoge", "huga", "piyo", "puyo",""])
+        self.assertListEqual(file.read(), ["hoge", "huga", "piyo", "puyo"])
 
     def tearDown(self):
         os.remove("test.txt")
