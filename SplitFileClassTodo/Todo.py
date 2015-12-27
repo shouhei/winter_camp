@@ -18,7 +18,7 @@ class Todo:
         return self.__todo
 
     def get_at(self,index):
-        if len(self.__todo):
+        if len(self.__todo) >= index:
             return self.__todo[index]
 
     def remove(self, todo_index):
